@@ -1,0 +1,310 @@
+body {
+	margin-bottom: 5%;
+  background-color: #000;
+}
+
+.map_container{
+  float: left;
+  width: 65%;
+  height: 100%;
+  margin-left: 1%;  
+}
+
+.map {
+  width: 100%;
+}
+
+.stats {
+  width: 100%;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+
+
+h1, h2 {
+  font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 24px;
+  font-style: normal;
+	text-align: center;
+  margin-bottom: 2%
+}
+
+.main_title {
+  color: #FFF;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.general {
+	width: 100%;
+	height: 100%;
+}
+
+.info h1 {
+  font-family: Rockwell, Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  margin-top: 0.5%;
+}
+
+.info {
+  float: left;
+	display: inline-block;
+	width: 30%;
+	height: auto;
+	margin-left: 1%;
+	padding-left: 0.5%;
+  padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	background-color: #E6E6E6;
+	border-radius: 1em;
+}
+
+.info div {
+	width: 98%;
+	height: auto;
+  margin-top: 0.1%;
+	background-color: #BDBDBD;
+	border-radius: 1em;
+}
+
+body div h1 {
+	margin-bottom: 0px;
+	font-size: 20px;
+}
+
+body div p {
+	display: inline-block;
+}
+
+.co2_chart {
+  display: none;
+}
+
+.co2_chart p {
+  display: none;
+	float: left;
+	margin-top: 5px;
+	margin-left: 20%;
+  font-family: Rockwell, Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.checkbox {
+  margin-left: 5%;
+}
+
+label {
+  font-family: Rockwell, Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 0.9vw;
+  font-style: normal;
+  text-align: center;
+  margin-top: 0.5%;
+}
+
+.relectricity_chart {
+  display: none;
+}
+
+.relectricity_chart p {
+  display: none;
+	float: left;
+	margin-top: 5px;
+	margin-left: 20%;
+  font-family: Rockwell, Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  font-style: normal;
+}
+
+/******************************************TIME SLIDER********************************************/
+.time_control {
+  height: auto;
+  text-align: center;
+}
+
+.time_control h1 {
+  font-family: Rockwell, Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.3vw;
+  font-style: normal;
+}
+
+.main_date {
+  font-family: Rockwell, Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 28px;
+  font-style: normal;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.extra_date {
+  font-family: Rockwell, Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 12px;
+  font-style: normal;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 90%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+
+
+
+/*******************************BUTTONS*********************************/
+button {
+  display: inline-block;
+  padding: 7px 15px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #9b0228;
+  border: none;
+  border-radius: 1em;
+  box-shadow: 0 3px #999;
+}
+
+button:hover {
+  background-color: #860223;
+}
+
+button:active {
+  background-color: #860223;
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}
+
+
+/************************************************************************** LEGEND ****************************************************************/
+/*Choropleth Legend*/
+.legend h1 {
+  font-family: Rockwell, Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.3vw;
+  font-style: normal;
+}
+
+.legend h2 {
+  font-family: Rockwell, Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 1vw;
+  font-style: normal;
+}
+
+
+ul{
+  padding-left: 3%;
+}
+li.key {
+  display: inline-block;
+  border-top-width: 15px;
+  border-top-style: solid;
+  font-size: .75em;
+  width: 12%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0.1%;
+  font: .75em/20px Georgia, serif;
+}
+.list_inline{
+  width: 80%;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Encoding -->
+		<meta charset="UTF-8">
+		<!-- Description of Web Page -->
+		<meta name="description" content="Dynamic Map, Thematic Visualization">
+		<!-- Keywords important for Google -->
+		<meta name="keywords" content="html, css, javascript, d3, EU, european, union">
+		<!-- Author information -->
+		<meta name="author" content="Adrián Castelló Martínez">
+
+		<!-- Title of the website on the tab -->
+		<title>Dynamic Map</title>
+
+		<!-- Icon of the website -->
+		<link href="img/mini_logo.png" rel="shortcut icon" type="image/png">
+
+		<!-- JavaScript -->
+
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+
+		<script src="http://d3js.org/topojson.v0.min.js"></script>
+		<script src="js/renewable_electricity.js"></script>
+		<script src="js/co2.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+
+		
+	</head>
+	<body>
+		<h1 class="main_title">THE EVOLUTION OF RENEWABLE ENERGY USE AND ITS RELATION WITH CO<sub>2</sub> EMISSIONS BETWEEN 1990 AND 2012</h1>
+
+		<section id="info" class="info">
+			<div id="relectricity_chart" class="relectricity_chart">
+				<h1>RENEWABLE ENERGY (% of total electicity output)</h1>
+				<p id="value_renewable"></p>
+			</div>
+			<div id="co2_chart" class="co2_chart">
+				<h1>CO<sub>2</sub> EMISSIONS (Metric Tons per capita)</h1>
+				<p id="value_co2"></p>
+			</div>
+			<div id="legend" class="legend">
+				<h1>LEGEND</h1>
+				<input class="checkbox" type="checkbox" name="select_co2" id="select_co2" value="co2_selected" checked>
+				<label>Show / hide CO<sub>2</sub> variable</label>
+				<input class="checkbox" type="checkbox" name="select_diagrams" id="select_diagrams" value="select_diagrams" unchecked>
+				<label>Show / hide bar diagrams</label>
+			</div>
+
+			<div id="time_control" class="time_control">
+				<h1>TIME CONTROL</h1>
+
+				<input id="timeslide" type="range" min="0" max="22" value="0" step="1"/><br>
+				<p id="pre" class="extra_date">No data</p>
+				<span id="range" class="main_date">1990</span>
+				<p id="after" class="extra_date">1991</p><br>
+				
+				<button type="button" id="start">start</button>
+				<button type="button" id="stop">stop</button>
+			</div>
+		</section>
+
+		<div id="map_container" class="map_container"></div>
+
+		<script type="text/javascript" src="js/app.js"></script>
+		<!-- CSS Styling -->
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+	</body>
+</html>
